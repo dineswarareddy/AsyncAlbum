@@ -3,24 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3821928B2C5474DDBFAA0C3C /* Pods_AsyncAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6129563E9EC9BD1ED21B59 /* Pods_AsyncAlbum.framework */; };
 		7CFD88BC22F58A4300861B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88BB22F58A4300861B3A /* AppDelegate.swift */; };
-		7CFD88BE22F58A4300861B3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88BD22F58A4300861B3A /* ViewController.swift */; };
+		7CFD88BE22F58A4300861B3A /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88BD22F58A4300861B3A /* UserListViewController.swift */; };
 		7CFD88C122F58A4300861B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFD88BF22F58A4300861B3A /* Main.storyboard */; };
 		7CFD88C422F58A4400861B3A /* AsyncAlbum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88C222F58A4400861B3A /* AsyncAlbum.xcdatamodeld */; };
 		7CFD88C622F58A4600861B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CFD88C522F58A4600861B3A /* Assets.xcassets */; };
 		7CFD88C922F58A4600861B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFD88C722F58A4600861B3A /* LaunchScreen.storyboard */; };
 		7CFD88D422F58A4600861B3A /* AsyncAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88D322F58A4600861B3A /* AsyncAlbumTests.swift */; };
 		7CFD88DF22F58A4600861B3A /* AsyncAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88DE22F58A4600861B3A /* AsyncAlbumUITests.swift */; };
-		7CFD88F022F58B5500861B3A /* AlbumListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88EF22F58B5500861B3A /* AlbumListInteractor.swift */; };
-		7CFD88F222F58B6600861B3A /* AlbumListInteractorBoundaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88F122F58B6600861B3A /* AlbumListInteractorBoundaries.swift */; };
-		7CFD88F422F58B7800861B3A /* AlbumListPresenterBoundaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88F322F58B7800861B3A /* AlbumListPresenterBoundaries.swift */; };
-		7CFD88F622F58B8400861B3A /* AlbumListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88F522F58B8400861B3A /* AlbumListPresenter.swift */; };
-		7CFD88FA22F58F7A00861B3A /* AlbumListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88F922F58F7A00861B3A /* AlbumListFactory.swift */; };
+		7CFD88F022F58B5500861B3A /* UserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88EF22F58B5500861B3A /* UserListInteractor.swift */; };
+		7CFD88F222F58B6600861B3A /* UserListInteractorBoundaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88F122F58B6600861B3A /* UserListInteractorBoundaries.swift */; };
+		7CFD88F422F58B7800861B3A /* UserListPresenterBoundaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88F322F58B7800861B3A /* UserListPresenterBoundaries.swift */; };
+		7CFD88F622F58B8400861B3A /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88F522F58B8400861B3A /* UserListPresenter.swift */; };
+		7CFD88FA22F58F7A00861B3A /* UserListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88F922F58F7A00861B3A /* UserListFactory.swift */; };
+		7CFD88FC22F5968300861B3A /* UserListNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88FB22F5968300861B3A /* UserListNetworkController.swift */; };
+		7CFD88FF22F59ABA00861B3A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88FE22F59ABA00861B3A /* UserProfile.swift */; };
+		7CFD890122F5AB5200861B3A /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890022F5AB5200861B3A /* ServiceHandler.swift */; };
+		7CFD890322F5E0D900861B3A /* UserListConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890222F5E0D900861B3A /* UserListConfiguration.swift */; };
+		7CFD890522F5FC7700861B3A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890422F5FC7700861B3A /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +50,7 @@
 		1C32DB2E589BA04B11D29A17 /* Pods-AsyncAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncAlbum.release.xcconfig"; path = "Target Support Files/Pods-AsyncAlbum/Pods-AsyncAlbum.release.xcconfig"; sourceTree = "<group>"; };
 		7CFD88B822F58A4300861B3A /* AsyncAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFD88BB22F58A4300861B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CFD88BD22F58A4300861B3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CFD88BD22F58A4300861B3A /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		7CFD88C022F58A4300861B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CFD88C322F58A4400861B3A /* AsyncAlbum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AsyncAlbum.xcdatamodel; sourceTree = "<group>"; };
 		7CFD88C522F58A4600861B3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,11 +62,16 @@
 		7CFD88DA22F58A4600861B3A /* AsyncAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFD88DE22F58A4600861B3A /* AsyncAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAlbumUITests.swift; sourceTree = "<group>"; };
 		7CFD88E022F58A4600861B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CFD88EF22F58B5500861B3A /* AlbumListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListInteractor.swift; sourceTree = "<group>"; };
-		7CFD88F122F58B6600861B3A /* AlbumListInteractorBoundaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListInteractorBoundaries.swift; sourceTree = "<group>"; };
-		7CFD88F322F58B7800861B3A /* AlbumListPresenterBoundaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListPresenterBoundaries.swift; sourceTree = "<group>"; };
-		7CFD88F522F58B8400861B3A /* AlbumListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListPresenter.swift; sourceTree = "<group>"; };
-		7CFD88F922F58F7A00861B3A /* AlbumListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListFactory.swift; sourceTree = "<group>"; };
+		7CFD88EF22F58B5500861B3A /* UserListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteractor.swift; sourceTree = "<group>"; };
+		7CFD88F122F58B6600861B3A /* UserListInteractorBoundaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteractorBoundaries.swift; sourceTree = "<group>"; };
+		7CFD88F322F58B7800861B3A /* UserListPresenterBoundaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenterBoundaries.swift; sourceTree = "<group>"; };
+		7CFD88F522F58B8400861B3A /* UserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
+		7CFD88F922F58F7A00861B3A /* UserListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListFactory.swift; sourceTree = "<group>"; };
+		7CFD88FB22F5968300861B3A /* UserListNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListNetworkController.swift; sourceTree = "<group>"; };
+		7CFD88FE22F59ABA00861B3A /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		7CFD890022F5AB5200861B3A /* ServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
+		7CFD890222F5E0D900861B3A /* UserListConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListConfiguration.swift; sourceTree = "<group>"; };
+		7CFD890422F5FC7700861B3A /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		B091B9C0B5B4BDC692E291E6 /* Pods-AsyncAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncAlbum.debug.xcconfig"; path = "Target Support Files/Pods-AsyncAlbum/Pods-AsyncAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +107,6 @@
 				B091B9C0B5B4BDC692E291E6 /* Pods-AsyncAlbum.debug.xcconfig */,
 				1C32DB2E589BA04B11D29A17 /* Pods-AsyncAlbum.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				7CFD88BA22F58A4300861B3A /* AsyncAlbum */,
-				7CFD88EC22F58AA900861B3A /* AlbumKit */,
+				7CFD88EC22F58AA900861B3A /* UsersKit */,
 				7CFD88D222F58A4600861B3A /* AsyncAlbumTests */,
 				7CFD88DD22F58A4600861B3A /* AsyncAlbumUITests */,
 				7CFD88B922F58A4300861B3A /* Products */,
@@ -136,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				7CFD88BB22F58A4300861B3A /* AppDelegate.swift */,
-				7CFD88BD22F58A4300861B3A /* ViewController.swift */,
+				7CFD88BD22F58A4300861B3A /* UserListViewController.swift */,
 				7CFD88BF22F58A4300861B3A /* Main.storyboard */,
 				7CFD88C522F58A4600861B3A /* Assets.xcassets */,
 				7CFD88C722F58A4600861B3A /* LaunchScreen.storyboard */,
@@ -164,21 +173,26 @@
 			path = AsyncAlbumUITests;
 			sourceTree = "<group>";
 		};
-		7CFD88EC22F58AA900861B3A /* AlbumKit */ = {
+		7CFD88EC22F58AA900861B3A /* UsersKit */ = {
 			isa = PBXGroup;
 			children = (
-				7CFD88F922F58F7A00861B3A /* AlbumListFactory.swift */,
+				7CFD88F922F58F7A00861B3A /* UserListFactory.swift */,
 				7CFD88ED22F58AEA00861B3A /* UserInterface */,
 				7CFD88EE22F58AF600861B3A /* Business */,
+				7CFD88FD22F59A9000861B3A /* Model */,
+				7CFD88FB22F5968300861B3A /* UserListNetworkController.swift */,
+				7CFD890022F5AB5200861B3A /* ServiceHandler.swift */,
+				7CFD890222F5E0D900861B3A /* UserListConfiguration.swift */,
+				7CFD890422F5FC7700861B3A /* Error.swift */,
 			);
-			path = AlbumKit;
+			path = UsersKit;
 			sourceTree = "<group>";
 		};
 		7CFD88ED22F58AEA00861B3A /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				7CFD88F322F58B7800861B3A /* AlbumListPresenterBoundaries.swift */,
-				7CFD88F522F58B8400861B3A /* AlbumListPresenter.swift */,
+				7CFD88F522F58B8400861B3A /* UserListPresenter.swift */,
+				7CFD88F322F58B7800861B3A /* UserListPresenterBoundaries.swift */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -186,10 +200,18 @@
 		7CFD88EE22F58AF600861B3A /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				7CFD88EF22F58B5500861B3A /* AlbumListInteractor.swift */,
-				7CFD88F122F58B6600861B3A /* AlbumListInteractorBoundaries.swift */,
+				7CFD88EF22F58B5500861B3A /* UserListInteractor.swift */,
+				7CFD88F122F58B6600861B3A /* UserListInteractorBoundaries.swift */,
 			);
 			path = Business;
+			sourceTree = "<group>";
+		};
+		7CFD88FD22F59A9000861B3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD88FE22F59ABA00861B3A /* UserProfile.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,14 +389,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CFD88F022F58B5500861B3A /* AlbumListInteractor.swift in Sources */,
-				7CFD88F222F58B6600861B3A /* AlbumListInteractorBoundaries.swift in Sources */,
-				7CFD88F422F58B7800861B3A /* AlbumListPresenterBoundaries.swift in Sources */,
-				7CFD88F622F58B8400861B3A /* AlbumListPresenter.swift in Sources */,
+				7CFD88F022F58B5500861B3A /* UserListInteractor.swift in Sources */,
+				7CFD88F222F58B6600861B3A /* UserListInteractorBoundaries.swift in Sources */,
+				7CFD88FC22F5968300861B3A /* UserListNetworkController.swift in Sources */,
+				7CFD890522F5FC7700861B3A /* Error.swift in Sources */,
+				7CFD88F422F58B7800861B3A /* UserListPresenterBoundaries.swift in Sources */,
+				7CFD88F622F58B8400861B3A /* UserListPresenter.swift in Sources */,
 				7CFD88C422F58A4400861B3A /* AsyncAlbum.xcdatamodeld in Sources */,
-				7CFD88BE22F58A4300861B3A /* ViewController.swift in Sources */,
-				7CFD88FA22F58F7A00861B3A /* AlbumListFactory.swift in Sources */,
+				7CFD88BE22F58A4300861B3A /* UserListViewController.swift in Sources */,
+				7CFD88FA22F58F7A00861B3A /* UserListFactory.swift in Sources */,
+				7CFD890322F5E0D900861B3A /* UserListConfiguration.swift in Sources */,
+				7CFD890122F5AB5200861B3A /* ServiceHandler.swift in Sources */,
 				7CFD88BC22F58A4300861B3A /* AppDelegate.swift in Sources */,
+				7CFD88FF22F59ABA00861B3A /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
