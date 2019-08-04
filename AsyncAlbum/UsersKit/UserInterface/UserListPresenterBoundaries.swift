@@ -10,9 +10,10 @@ import Foundation
 
 protocol UserListPresenterInput {
     func findAlbumList()
+    func loadMoreContent()
 }
 
 protocol UserListPresenterOutput {
-    func displayUsersList(_ users: [UserProfile])
+    func displayUsersList(_ users: [UserProfileViewModel])
     func displayError(_ errorMessage: String)
 }
