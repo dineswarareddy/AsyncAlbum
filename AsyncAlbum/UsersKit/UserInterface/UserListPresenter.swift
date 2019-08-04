@@ -20,11 +20,21 @@ final class UserListPresenter {
     init(view: UserListPresenterOutput?) {
         self.view = view
     }
+    
+    private func constructUsersList(_ usersList: [UserProfile]) {
+        let users = usersList.map({
+            return UserProfileViewModel(id: $0.id, imagePath: $0.user?.profileImage?.large, name: $0.user?.name, likes: $0.likes) })
+        view?.displayUsersList(users)
+    }
 }
 
 extension UserListPresenter: UserListPresenterInput {
     func findAlbumList() {
         interactor?.fetchUserList()
+    }
+    
+    func loadMoreContent() {
+        
     }
 }
 
@@ -38,6 +48,6 @@ extension UserListPresenter: UserListInteractorOutput {
     }
     
     func updateUserList(_ users: [UserProfile]) {
-        view?.displayUsersList(users)
+        constructUsersList(users)
     }
 }
