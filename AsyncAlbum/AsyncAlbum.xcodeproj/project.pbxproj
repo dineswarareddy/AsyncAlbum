@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3821928B2C5474DDBFAA0C3C /* Pods_AsyncAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6129563E9EC9BD1ED21B59 /* Pods_AsyncAlbum.framework */; };
+		7C5E9BE122F6E9A5006AFE70 /* ImageFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E9BE022F6E9A5006AFE70 /* ImageFrameCalculator.swift */; };
 		7CFD88BC22F58A4300861B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88BB22F58A4300861B3A /* AppDelegate.swift */; };
 		7CFD88BE22F58A4300861B3A /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88BD22F58A4300861B3A /* UserListViewController.swift */; };
 		7CFD88C122F58A4300861B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFD88BF22F58A4300861B3A /* Main.storyboard */; };
-		7CFD88C422F58A4400861B3A /* AsyncAlbum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88C222F58A4400861B3A /* AsyncAlbum.xcdatamodeld */; };
-		7CFD88C622F58A4600861B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CFD88C522F58A4600861B3A /* Assets.xcassets */; };
+		7CFD88C622F58A4600861B3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CFD88C522F58A4600861B3A /* Images.xcassets */; };
 		7CFD88C922F58A4600861B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFD88C722F58A4600861B3A /* LaunchScreen.storyboard */; };
 		7CFD88D422F58A4600861B3A /* AsyncAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88D322F58A4600861B3A /* AsyncAlbumTests.swift */; };
 		7CFD88DF22F58A4600861B3A /* AsyncAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88DE22F58A4600861B3A /* AsyncAlbumUITests.swift */; };
@@ -26,6 +26,10 @@
 		7CFD890122F5AB5200861B3A /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890022F5AB5200861B3A /* ServiceHandler.swift */; };
 		7CFD890322F5E0D900861B3A /* UserListConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890222F5E0D900861B3A /* UserListConfiguration.swift */; };
 		7CFD890522F5FC7700861B3A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890422F5FC7700861B3A /* Error.swift */; };
+		7CFD890722F6B9B600861B3A /* UserCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890622F6B9B600861B3A /* UserCollectionViewLayout.swift */; };
+		7CFD890A22F6C20300861B3A /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890922F6C20300861B3A /* UserProfileViewModel.swift */; };
+		7CFD890D22F6D3F800861B3A /* UserProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890C22F6D3F800861B3A /* UserProfileCollectionViewCell.swift */; };
+		7CFD891322F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD891222F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +52,12 @@
 /* Begin PBXFileReference section */
 		0F6129563E9EC9BD1ED21B59 /* Pods_AsyncAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsyncAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C32DB2E589BA04B11D29A17 /* Pods-AsyncAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncAlbum.release.xcconfig"; path = "Target Support Files/Pods-AsyncAlbum/Pods-AsyncAlbum.release.xcconfig"; sourceTree = "<group>"; };
+		7C5E9BE022F6E9A5006AFE70 /* ImageFrameCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFrameCalculator.swift; sourceTree = "<group>"; };
 		7CFD88B822F58A4300861B3A /* AsyncAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFD88BB22F58A4300861B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CFD88BD22F58A4300861B3A /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		7CFD88C022F58A4300861B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7CFD88C322F58A4400861B3A /* AsyncAlbum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AsyncAlbum.xcdatamodel; sourceTree = "<group>"; };
-		7CFD88C522F58A4600861B3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CFD88C522F58A4600861B3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7CFD88C822F58A4600861B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CFD88CA22F58A4600861B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CFD88CF22F58A4600861B3A /* AsyncAlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncAlbumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +76,10 @@
 		7CFD890022F5AB5200861B3A /* ServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
 		7CFD890222F5E0D900861B3A /* UserListConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListConfiguration.swift; sourceTree = "<group>"; };
 		7CFD890422F5FC7700861B3A /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		7CFD890622F6B9B600861B3A /* UserCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewLayout.swift; sourceTree = "<group>"; };
+		7CFD890922F6C20300861B3A /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		7CFD890C22F6D3F800861B3A /* UserProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		7CFD891222F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+AsyncAlbum.swift"; sourceTree = "<group>"; };
 		B091B9C0B5B4BDC692E291E6 /* Pods-AsyncAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncAlbum.debug.xcconfig"; path = "Target Support Files/Pods-AsyncAlbum/Pods-AsyncAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +126,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C5E9BDF22F6E990006AFE70 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E9BE022F6E9A5006AFE70 /* ImageFrameCalculator.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		7CE37DFA22F6DDCE0018385A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD890022F5AB5200861B3A /* ServiceHandler.swift */,
+				7CFD88FB22F5968300861B3A /* UserListNetworkController.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		7CFD88AF22F58A4300861B3A = {
 			isa = PBXGroup;
 			children = (
@@ -145,12 +170,11 @@
 			isa = PBXGroup;
 			children = (
 				7CFD88BB22F58A4300861B3A /* AppDelegate.swift */,
-				7CFD88BD22F58A4300861B3A /* UserListViewController.swift */,
-				7CFD88BF22F58A4300861B3A /* Main.storyboard */,
-				7CFD88C522F58A4600861B3A /* Assets.xcassets */,
-				7CFD88C722F58A4600861B3A /* LaunchScreen.storyboard */,
-				7CFD88CA22F58A4600861B3A /* Info.plist */,
-				7CFD88C222F58A4400861B3A /* AsyncAlbum.xcdatamodeld */,
+				7CFD890F22F6D6C000861B3A /* StoryBoards & Xibs */,
+				7CFD890E22F6D62700861B3A /* Views */,
+				7CFD890B22F6D33F00861B3A /* Cells */,
+				7CFD891122F6D9BC00861B3A /* Extensions */,
+				7CFD891022F6D6F400861B3A /* Assets */,
 			);
 			path = AsyncAlbum;
 			sourceTree = "<group>";
@@ -176,12 +200,11 @@
 		7CFD88EC22F58AA900861B3A /* UsersKit */ = {
 			isa = PBXGroup;
 			children = (
+				7C5E9BDF22F6E990006AFE70 /* Commons */,
 				7CFD88F922F58F7A00861B3A /* UserListFactory.swift */,
 				7CFD88ED22F58AEA00861B3A /* UserInterface */,
 				7CFD88EE22F58AF600861B3A /* Business */,
-				7CFD88FD22F59A9000861B3A /* Model */,
-				7CFD88FB22F5968300861B3A /* UserListNetworkController.swift */,
-				7CFD890022F5AB5200861B3A /* ServiceHandler.swift */,
+				7CE37DFA22F6DDCE0018385A /* Network */,
 				7CFD890222F5E0D900861B3A /* UserListConfiguration.swift */,
 				7CFD890422F5FC7700861B3A /* Error.swift */,
 			);
@@ -191,6 +214,7 @@
 		7CFD88ED22F58AEA00861B3A /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				7CFD890822F6C1DD00861B3A /* ViewModel */,
 				7CFD88F522F58B8400861B3A /* UserListPresenter.swift */,
 				7CFD88F322F58B7800861B3A /* UserListPresenterBoundaries.swift */,
 			);
@@ -200,18 +224,70 @@
 		7CFD88EE22F58AF600861B3A /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				7CFD88FD22F59A9000861B3A /* NetworkModel */,
 				7CFD88EF22F58B5500861B3A /* UserListInteractor.swift */,
 				7CFD88F122F58B6600861B3A /* UserListInteractorBoundaries.swift */,
 			);
 			path = Business;
 			sourceTree = "<group>";
 		};
-		7CFD88FD22F59A9000861B3A /* Model */ = {
+		7CFD88FD22F59A9000861B3A /* NetworkModel */ = {
 			isa = PBXGroup;
 			children = (
 				7CFD88FE22F59ABA00861B3A /* UserProfile.swift */,
 			);
-			path = Model;
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		7CFD890822F6C1DD00861B3A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD890922F6C20300861B3A /* UserProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CFD890B22F6D33F00861B3A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD890C22F6D3F800861B3A /* UserProfileCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7CFD890E22F6D62700861B3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD88BD22F58A4300861B3A /* UserListViewController.swift */,
+				7CFD890622F6B9B600861B3A /* UserCollectionViewLayout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CFD890F22F6D6C000861B3A /* StoryBoards & Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD88C722F58A4600861B3A /* LaunchScreen.storyboard */,
+				7CFD88BF22F58A4300861B3A /* Main.storyboard */,
+			);
+			path = "StoryBoards & Xibs";
+			sourceTree = "<group>";
+		};
+		7CFD891022F6D6F400861B3A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD88C522F58A4600861B3A /* Images.xcassets */,
+				7CFD88CA22F58A4600861B3A /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7CFD891122F6D9BC00861B3A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD891222F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CFD88C922F58A4600861B3A /* LaunchScreen.storyboard in Resources */,
-				7CFD88C622F58A4600861B3A /* Assets.xcassets in Resources */,
+				7CFD88C622F58A4600861B3A /* Images.xcassets in Resources */,
 				7CFD88C122F58A4300861B3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,15 +467,19 @@
 			files = (
 				7CFD88F022F58B5500861B3A /* UserListInteractor.swift in Sources */,
 				7CFD88F222F58B6600861B3A /* UserListInteractorBoundaries.swift in Sources */,
+				7C5E9BE122F6E9A5006AFE70 /* ImageFrameCalculator.swift in Sources */,
+				7CFD890A22F6C20300861B3A /* UserProfileViewModel.swift in Sources */,
 				7CFD88FC22F5968300861B3A /* UserListNetworkController.swift in Sources */,
 				7CFD890522F5FC7700861B3A /* Error.swift in Sources */,
 				7CFD88F422F58B7800861B3A /* UserListPresenterBoundaries.swift in Sources */,
 				7CFD88F622F58B8400861B3A /* UserListPresenter.swift in Sources */,
-				7CFD88C422F58A4400861B3A /* AsyncAlbum.xcdatamodeld in Sources */,
 				7CFD88BE22F58A4300861B3A /* UserListViewController.swift in Sources */,
 				7CFD88FA22F58F7A00861B3A /* UserListFactory.swift in Sources */,
 				7CFD890322F5E0D900861B3A /* UserListConfiguration.swift in Sources */,
 				7CFD890122F5AB5200861B3A /* ServiceHandler.swift in Sources */,
+				7CFD890722F6B9B600861B3A /* UserCollectionViewLayout.swift in Sources */,
+				7CFD890D22F6D3F800861B3A /* UserProfileCollectionViewCell.swift in Sources */,
+				7CFD891322F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift in Sources */,
 				7CFD88BC22F58A4300861B3A /* AppDelegate.swift in Sources */,
 				7CFD88FF22F59ABA00861B3A /* UserProfile.swift in Sources */,
 			);
@@ -578,7 +658,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AsyncAlbum/Info.plist;
+				INFOPLIST_FILE = AsyncAlbum/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,7 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AsyncAlbum/Info.plist;
+				INFOPLIST_FILE = AsyncAlbum/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -726,19 +806,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		7CFD88C222F58A4400861B3A /* AsyncAlbum.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7CFD88C322F58A4400861B3A /* AsyncAlbum.xcdatamodel */,
-			);
-			currentVersion = 7CFD88C322F58A4400861B3A /* AsyncAlbum.xcdatamodel */;
-			path = AsyncAlbum.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7CFD88B022F58A4300861B3A /* Project object */;
 }
