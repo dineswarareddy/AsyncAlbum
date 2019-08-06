@@ -20,11 +20,14 @@ private enum CollectionViewConstants {
 
 class UserListViewController: UICollectionViewController {
     var presenter: UserListPresenterInput?
-    var userList: [UserProfileViewModel] = [] {
-        didSet{
-            collectionView.reloadData()
-        }
-    }
+    var userList: [UserProfileViewModel] = []
+    
+//    var userList: [UserProfileViewModel] = [] {
+//        didSet{
+//            reloadCollectionView()
+//        }
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -37,6 +40,10 @@ class UserListViewController: UICollectionViewController {
         if let layout = collectionView.collectionViewLayout as? UserCollectionViewLayout {
             layout.delegate = self
         }
+    }
+    
+    private func reloadCollectionView() {
+        collectionView.reloadData()
     }
     
     private func setupFactory() {
@@ -70,7 +77,7 @@ extension UserListViewController {
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let endScrolling = scrollView.contentOffset.y + scrollView.frame.size.height + 0.0001
         if endScrolling >= scrollView.contentSize.height {
-            presenter?.loadMoreContent()
+            presenter?.loadMoreContent(startIndex: userList.count)
         }
     }
 }
@@ -78,6 +85,7 @@ extension UserListViewController {
 extension UserListViewController: UserListPresenterOutput {
     func displayUsersList(_ users: [UserProfileViewModel]) {
         userList.append(contentsOf: users)
+        reloadCollectionView()
     }
     
     func displayError(_ errorMessage: String) {
