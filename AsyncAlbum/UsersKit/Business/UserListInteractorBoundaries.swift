@@ -9,7 +9,8 @@
 import Foundation
 
 protocol UserListInteractorInput {
-    func fetchUserList()
+    func fetchUserList(startIndex: Int)
+    func fetchUserListFromAPI()
 }
 
 protocol UserListInteractorOutput {

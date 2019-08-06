@@ -10,7 +10,7 @@ import Foundation
 
 protocol UserListPresenterInput {
     func findAlbumList()
-    func loadMoreContent()
+    func loadMoreContent(startIndex: Int)
 }
 
 protocol UserListPresenterOutput {
