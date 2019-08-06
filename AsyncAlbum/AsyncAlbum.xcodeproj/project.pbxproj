@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3821928B2C5474DDBFAA0C3C /* Pods_AsyncAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6129563E9EC9BD1ED21B59 /* Pods_AsyncAlbum.framework */; };
 		7C5E9BE122F6E9A5006AFE70 /* ImageFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E9BE022F6E9A5006AFE70 /* ImageFrameCalculator.swift */; };
+		7CB5F45A22F89C8500AF8CEF /* UIImageView+UsersKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5F45922F89C8500AF8CEF /* UIImageView+UsersKit.swift */; };
 		7CFD88BC22F58A4300861B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88BB22F58A4300861B3A /* AppDelegate.swift */; };
 		7CFD88BE22F58A4300861B3A /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88BD22F58A4300861B3A /* UserListViewController.swift */; };
 		7CFD88C122F58A4300861B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFD88BF22F58A4300861B3A /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		0F6129563E9EC9BD1ED21B59 /* Pods_AsyncAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsyncAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C32DB2E589BA04B11D29A17 /* Pods-AsyncAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncAlbum.release.xcconfig"; path = "Target Support Files/Pods-AsyncAlbum/Pods-AsyncAlbum.release.xcconfig"; sourceTree = "<group>"; };
 		7C5E9BE022F6E9A5006AFE70 /* ImageFrameCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFrameCalculator.swift; sourceTree = "<group>"; };
+		7CB5F45922F89C8500AF8CEF /* UIImageView+UsersKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+UsersKit.swift"; sourceTree = "<group>"; };
 		7CFD88B822F58A4300861B3A /* AsyncAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFD88BB22F58A4300861B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CFD88BD22F58A4300861B3A /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
+		7CB5F45B22F89C8B00AF8CEF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7CB5F45922F89C8500AF8CEF /* UIImageView+UsersKit.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7CE37DFA22F6DDCE0018385A /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +210,7 @@
 		7CFD88EC22F58AA900861B3A /* UsersKit */ = {
 			isa = PBXGroup;
 			children = (
+				7CB5F45B22F89C8B00AF8CEF /* Extensions */,
 				7C5E9BDF22F6E990006AFE70 /* Commons */,
 				7CFD88F922F58F7A00861B3A /* UserListFactory.swift */,
 				7CFD88ED22F58AEA00861B3A /* UserInterface */,
@@ -471,6 +482,7 @@
 				7CFD890A22F6C20300861B3A /* UserProfileViewModel.swift in Sources */,
 				7CFD88FC22F5968300861B3A /* UserListNetworkController.swift in Sources */,
 				7CFD890522F5FC7700861B3A /* Error.swift in Sources */,
+				7CB5F45A22F89C8500AF8CEF /* UIImageView+UsersKit.swift in Sources */,
 				7CFD88F422F58B7800861B3A /* UserListPresenterBoundaries.swift in Sources */,
 				7CFD88F622F58B8400861B3A /* UserListPresenter.swift in Sources */,
 				7CFD88BE22F58A4300861B3A /* UserListViewController.swift in Sources */,
