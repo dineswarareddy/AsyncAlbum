@@ -11,6 +11,7 @@ import Foundation
 final class UserListInteractor {
     private let output: UserListInteractorOutput?
     private let networkController: UserListNetworkController?
+    private var userProfiles: [UserProfile] = []
     
     init(presenter: UserListInteractorOutput?, networkController: UserListNetworkController?) {
         self.output = presenter
@@ -26,17 +27,35 @@ final class UserListInteractor {
             output?.updateServerError()
         }
     }
+    
+    private func processUserProfilesList(_ list: [UserProfile]) {
+        userProfiles.append(contentsOf: list)
+        getUserList(0)
+    }
+    
+    private func getUserList(_ initialIndex: Int) {
+        let paginationCount = UserListConfiguration.userListPaginationCount
+        let numberOfITemsToFetch = userProfiles.count > initialIndex + paginationCount ? paginationCount : (userProfiles.count - initialIndex)
+        if numberOfITemsToFetch > 0 {
+            let userListToDisplay = Array(userProfiles[initialIndex..<initialIndex + numberOfITemsToFetch])
+            output?.updateUserList(userListToDisplay)
+        }
+    }
 }
 
 extension UserListInteractor: UserListInteractorInput {
-    func fetchUserList() {
+    func fetchUserList(startIndex: Int) {
+        getUserList(startIndex)
+    }
+    
+    func fetchUserListFromAPI() {
         networkController?.fetchUserList()
     }
 }
 
 extension UserListInteractor: UserListControllerDelegate {
     func updateUsersList(users: [UserProfile]) {
-        output?.updateUserList(users)
+        processUserProfilesList(users)
     }
     
     func updateServerError(error: Error) {

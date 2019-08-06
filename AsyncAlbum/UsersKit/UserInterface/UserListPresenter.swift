@@ -30,11 +30,11 @@ final class UserListPresenter {
 
 extension UserListPresenter: UserListPresenterInput {
     func findAlbumList() {
-        interactor?.fetchUserList()
+        interactor?.fetchUserListFromAPI()
     }
     
-    func loadMoreContent() {
-        
+    func loadMoreContent(startIndex: Int) {
+        interactor?.fetchUserList(startIndex: startIndex)
     }
 }
 
