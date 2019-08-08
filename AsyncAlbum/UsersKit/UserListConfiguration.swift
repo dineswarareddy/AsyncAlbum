@@ -8,8 +8,8 @@
 
 import Foundation
 
-final class UserListConfiguration {
+enum UserListConfiguration {
     static let userListURL = "http://pastebin.com/raw/wgkJgazE"
     static let maxStorageCapacity = 1024 * 40
-    static let userListPaginationCount = 10
+    static let userListPaginationCount = 8
 }
