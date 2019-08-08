@@ -20,19 +20,25 @@ private enum CollectionViewConstants {
 
 class UserListViewController: UICollectionViewController {
     var presenter: UserListPresenterInput?
-    var userList: [UserProfileViewModel] = []
-    
-//    var userList: [UserProfileViewModel] = [] {
-//        didSet{
-//            reloadCollectionView()
-//        }
-//    }
+    private var userList: [UserProfileViewModel] = []
+    private let pullToRefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupFactory()
         setupUserListCollectionView()
+        setupPullToRefresh()
+    }
+    
+    private func setupPullToRefresh() {
+        collectionView.refreshControl = pullToRefreshControl
+        pullToRefreshControl.addTarget(self, action: #selector(pullToRefreshPerformed), for: .valueChanged)
+    }
+    
+    @objc private func pullToRefreshPerformed() {
+        userList.removeAll()
+        presenter?.findAlbumList()
     }
     
     private func setupUserListCollectionView() {
@@ -44,6 +50,7 @@ class UserListViewController: UICollectionViewController {
     
     private func reloadCollectionView() {
         collectionView.reloadData()
+        collectionViewLayout.invalidateLayout()
     }
     
     private func setupFactory() {
@@ -54,7 +61,7 @@ class UserListViewController: UICollectionViewController {
 
 extension UserListViewController: UserLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-        return 500
+        return 220
     }
 }
 
@@ -74,6 +81,8 @@ extension UserListViewController {
         return userProfileCell
     }
     
+    // MARK: Scrollview delegate
+    
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let endScrolling = scrollView.contentOffset.y + scrollView.frame.size.height + 0.0001
         if endScrolling >= scrollView.contentSize.height {
@@ -86,6 +95,7 @@ extension UserListViewController: UserListPresenterOutput {
     func displayUsersList(_ users: [UserProfileViewModel]) {
         userList.append(contentsOf: users)
         reloadCollectionView()
+        collectionView.refreshControl?.endRefreshing()
     }
     
     func displayError(_ errorMessage: String) {

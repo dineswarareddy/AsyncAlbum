@@ -49,6 +49,7 @@ extension UserListInteractor: UserListInteractorInput {
     }
     
     func fetchUserListFromAPI() {
+        userProfiles.removeAll()
         networkController?.fetchUserList()
     }
 }
