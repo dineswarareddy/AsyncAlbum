@@ -15,9 +15,9 @@ protocol UserListControllerDelegate {
 
 final class UserListNetworkController {
     var delegate: UserListControllerDelegate?
-    func fetchUserList() {
+    func fetchUserList(useCache: Bool = false) {
         if let userListURL = URL(string: UserListConfiguration.userListURL) {
-            ServiceHandler.fetchUsersList(requestURL: userListURL) { [weak self] (userListData, error) -> (Void) in
+            ServiceHandler.fetchUsersList(requestURL: userListURL, useCache: useCache) { [weak self] (userListData, error) -> (Void) in
                 guard let error = error else {
                     if let userList = userListData {
                         let jsonData = try? JSONSerialization.data(withJSONObject:userList)
