@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let imageCache = NSCache<NSString, UIImage>()
+var imageCache: [CachedImage] = []
 private let placeHolderImage = UIImage.init(named: "PlaceHolder")
 private var currentDownloadingTasks: [URLSessionDataTask]? = []
 
@@ -17,7 +17,7 @@ public extension UIImageView {
         self.image = nil
         guard let url = url else { return }
         self.accessibilityIdentifier = url.absoluteString
-        if let cachedImage = imageCache.object(forKey: NSString(string: url.absoluteString)) {
+        if let cachedImage = StorageManager.shareInstance.fetchImage(imageURL: url.absoluteString) {
             self.image = cachedImage
             return
         }
@@ -31,7 +31,7 @@ public extension UIImageView {
             DispatchQueue.main.async {
                 if let data = data {
                     if let downloadedImage = UIImage(data: data) {
-                        imageCache.setObject(downloadedImage, forKey: NSString(string: url.absoluteString))
+                        StorageManager.shareInstance.cacheImage(image: downloadedImage, imageURL: url.absoluteString)
                         self?.image = downloadedImage
                         self?.removeTaskFromTodoList(url.absoluteString)
                         return

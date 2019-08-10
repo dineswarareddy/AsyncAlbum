@@ -29,14 +29,14 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6l-Dd-Oqm">
                                             <rect key="frame" x="0.0" y="0.0" width="227" height="191"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uaA-1v-ZYA">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uaA-1v-ZYA">
                                                     <rect key="frame" x="0.0" y="0.0" width="227" height="191"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wlf-og-0rh">
-                                                            <rect key="frame" x="0.0" y="0.0" width="227" height="161.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="227" height="166"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6g-6h-jpV">
-                                                            <rect key="frame" x="0.0" y="171.5" width="227" height="19.5"/>
+                                                            <rect key="frame" x="0.0" y="171" width="227" height="20"/>
                                                             <color key="backgroundColor" red="0.27058823529999998" green="0.29411764709999999" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                             <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
