@@ -10,6 +10,6 @@ import Foundation
 
 enum UserListConfiguration {
     static let userListURL = "http://pastebin.com/raw/wgkJgazE"
-    static let maxStorageCapacity = 1024 * 40
+    static let maxStorageCapacity = 65     // Size units are KB
     static let userListPaginationCount = 8
 }
