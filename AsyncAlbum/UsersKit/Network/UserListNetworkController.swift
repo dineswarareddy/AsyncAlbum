@@ -19,9 +19,13 @@ final class UserListNetworkController {
         if let userListURL = URL(string: UserListConfiguration.userListURL) {
             ServiceHandler.fetchUsersList(requestURL: userListURL) { [weak self] (userListData, error) -> (Void) in
                 guard let error = error else {
-                    let jsonData = try? JSONSerialization.data(withJSONObject:userListData)
-                    if let response = jsonData {
-                        self?.convertDataToUserList(response)
+                    if let userList = userListData {
+                        let jsonData = try? JSONSerialization.data(withJSONObject:userList)
+                        if let response = jsonData {
+                            self?.convertDataToUserList(response)
+                        }
+                    } else {
+                        self?.delegate?.updateServerError(error: DefinedError.serviceError)
                     }
                     return
                 }

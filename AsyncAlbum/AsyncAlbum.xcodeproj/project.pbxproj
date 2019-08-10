@@ -30,7 +30,6 @@
 		7CFD890722F6B9B600861B3A /* UserCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890622F6B9B600861B3A /* UserCollectionViewLayout.swift */; };
 		7CFD890A22F6C20300861B3A /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890922F6C20300861B3A /* UserProfileViewModel.swift */; };
 		7CFD890D22F6D3F800861B3A /* UserProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD890C22F6D3F800861B3A /* UserProfileCollectionViewCell.swift */; };
-		7CFD891322F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD891222F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +80,6 @@
 		7CFD890622F6B9B600861B3A /* UserCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewLayout.swift; sourceTree = "<group>"; };
 		7CFD890922F6C20300861B3A /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		7CFD890C22F6D3F800861B3A /* UserProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCollectionViewCell.swift; sourceTree = "<group>"; };
-		7CFD891222F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+AsyncAlbum.swift"; sourceTree = "<group>"; };
 		B091B9C0B5B4BDC692E291E6 /* Pods-AsyncAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncAlbum.debug.xcconfig"; path = "Target Support Files/Pods-AsyncAlbum/Pods-AsyncAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -296,7 +294,6 @@
 		7CFD891122F6D9BC00861B3A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7CFD891222F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -491,7 +488,6 @@
 				7CFD890122F5AB5200861B3A /* ServiceHandler.swift in Sources */,
 				7CFD890722F6B9B600861B3A /* UserCollectionViewLayout.swift in Sources */,
 				7CFD890D22F6D3F800861B3A /* UserProfileCollectionViewCell.swift in Sources */,
-				7CFD891322F6D9DC00861B3A /* UIImageView+AsyncAlbum.swift in Sources */,
 				7CFD88BC22F58A4300861B3A /* AppDelegate.swift in Sources */,
 				7CFD88FF22F59ABA00861B3A /* UserProfile.swift in Sources */,
 			);
