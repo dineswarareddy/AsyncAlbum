@@ -10,7 +10,6 @@
 		3821928B2C5474DDBFAA0C3C /* Pods_AsyncAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6129563E9EC9BD1ED21B59 /* Pods_AsyncAlbum.framework */; };
 		7C05BD8F22FF429900FFD618 /* CachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05BD8E22FF429900FFD618 /* CachedImage.swift */; };
 		7C05BD9122FF42ED00FFD618 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05BD9022FF42ED00FFD618 /* StorageManager.swift */; };
-		7C5E9BE122F6E9A5006AFE70 /* ImageFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E9BE022F6E9A5006AFE70 /* ImageFrameCalculator.swift */; };
 		7CB5F45A22F89C8500AF8CEF /* UIImageView+UsersKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5F45922F89C8500AF8CEF /* UIImageView+UsersKit.swift */; };
 		7CFD88BC22F58A4300861B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88BB22F58A4300861B3A /* AppDelegate.swift */; };
 		7CFD88BE22F58A4300861B3A /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD88BD22F58A4300861B3A /* UserListViewController.swift */; };
@@ -56,7 +55,6 @@
 		1C32DB2E589BA04B11D29A17 /* Pods-AsyncAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncAlbum.release.xcconfig"; path = "Target Support Files/Pods-AsyncAlbum/Pods-AsyncAlbum.release.xcconfig"; sourceTree = "<group>"; };
 		7C05BD8E22FF429900FFD618 /* CachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImage.swift; sourceTree = "<group>"; };
 		7C05BD9022FF42ED00FFD618 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		7C5E9BE022F6E9A5006AFE70 /* ImageFrameCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFrameCalculator.swift; sourceTree = "<group>"; };
 		7CB5F45922F89C8500AF8CEF /* UIImageView+UsersKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+UsersKit.swift"; sourceTree = "<group>"; };
 		7CFD88B822F58A4300861B3A /* AsyncAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFD88BB22F58A4300861B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 		7C5E9BDF22F6E990006AFE70 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				7C5E9BE022F6E9A5006AFE70 /* ImageFrameCalculator.swift */,
 				7C05BD8E22FF429900FFD618 /* CachedImage.swift */,
 				7C05BD9022FF42ED00FFD618 /* StorageManager.swift */,
 			);
@@ -481,7 +478,6 @@
 			files = (
 				7CFD88F022F58B5500861B3A /* UserListInteractor.swift in Sources */,
 				7CFD88F222F58B6600861B3A /* UserListInteractorBoundaries.swift in Sources */,
-				7C5E9BE122F6E9A5006AFE70 /* ImageFrameCalculator.swift in Sources */,
 				7CFD890A22F6C20300861B3A /* UserProfileViewModel.swift in Sources */,
 				7CFD88FC22F5968300861B3A /* UserListNetworkController.swift in Sources */,
 				7C05BD8F22FF429900FFD618 /* CachedImage.swift in Sources */,
